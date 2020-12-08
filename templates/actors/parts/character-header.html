@@ -1,0 +1,65 @@
+<img class="profile-img" src="{{actor.img}}" data-edit="img" title="{{actor.name}}" height="100" width="100" />
+    <div class="header-fields">
+        <h1 class="charname"><input name="name" type="text" value="{{actor.name}}" placeholder="Name" /></h1>
+
+        <!-- Character summary fields -->
+
+            <ul class="attributes flexrow">
+                <li class="attribute">
+                    <h4 class="attribute-name box-title">{{ localize data.core.hp.label }}</h4>
+                    <div class="attribute-value multiple">
+                        <input class="attribute-value multiple" type="text" name="data.core.hp.value" value="{{data.core.hp.value}}" data-dtype="Number" />
+                        <span> / </span>
+                        <input class="attribute-value multiple" type="text" name="data.core.hp.max" value="{{data.core.hp.max}}" data-dtype="Number" />
+                    </div>
+                </li>
+
+                <li class="attribute">
+                    <h4 class="attribute-name box-title">{{ localize data.core.sta.label }}</h4>
+                    <div class="attribute-value multiple">
+                        <input class="attribute-value multiple" type="text" name="data.core.sta.value" value="{{data.core.sta.value}}" data-dtype="Number" />
+                        <span> / </span>
+                        <input class="attribute-value multiple" type="text" name="data.core.sta.max" value="{{data.core.sta.max}}" data-dtype="Number" />
+                    </div>
+                </li>
+
+                <li class="attribute">
+                    <h4 class="attribute-name box-title">{{ localize "WITCHER.Race" }}</h4>
+                    <div class="attribute-value">
+                        <input class="header detail" name="data.general.race" type="String" value="{{data.general.race}}" placeholder="Race"/>
+                    </div>
+                </li>
+
+                <li class="attribute">
+                    <h4 class="attribute-name box-title">{{ localize "WITCHER.Profession" }}</h4>
+                    <div class="attribute-value">
+                        <input class="header detail" name="data.general.profession" type="String" value="{{data.general.profession}}" placeholder="Profession"/>
+                    </div>
+                </li>
+            </ul>
+
+            <ul class="attributes flexrow">
+
+                <li class="attribute">
+                    <h4 class="attribute-name box-title">{{ localize data.core.spd.label }}</h4>
+                    <div class="attribute-value">
+                        <input class="header detail num" type="text" name="data.core.spd.value" value="{{data.core.spd.value}}" data-dtype="Number" />
+                    </div>
+                </li>
+
+                <li class="attribute">
+                    <h4 class="attribute-name box-title">{{ localize data.core.luck.label }}</h4>
+                    <div class="attribute-value">
+                        <input class="header detail num" type="text" name="data.core.luck.value" value="{{data.core.luck.value}}" data-dtype="Number" />
+                    </div>
+                </li>
+
+                <li class="attribute">
+                    <h4 class="attribute-name box-title">{{ localize data.core.vigor.label }}</h4>
+                    <div class="attribute-value">
+                        <input class="header detail num" type="text" name="data.core.vigor.value" value="{{data.core.vigor.value}}" data-dtype="Number" />
+                    </div>
+                </li>
+
+        </div>
+    </div>
