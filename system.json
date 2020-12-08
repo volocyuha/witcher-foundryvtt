@@ -29,6 +29,6 @@
   "secondaryTokenAttribute": "sta",
   "url": "https://github.com/sparkcity/fvtt-wtrpg",
   "manifest": "https://github.com/shum1634/witcher-foundryvtt/blob/main/system.json",
-  "download": "",
+  "download": "https://github.com/shum1634/witcher-foundryvtt/archive/main.zip",
   "license": "LICENSE.txt"
 }
